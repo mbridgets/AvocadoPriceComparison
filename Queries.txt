@@ -1,0 +1,20 @@
+CREATE TABLE avocado_sales(
+  id INT PRIMARY KEY NOT NULL,
+  date TIMESTAMP,
+  average_price DECIMAL,
+  total_volume DECIMAL,
+  type_4046 DECIMAL,
+  type_4225 DECIMAL,
+  type_4770 DECIMAL,
+  total_bags DECIMAL,
+  small_bags DECIMAL,
+  large_bags DECIMAL,
+  xlarge_bags DECIMAL,
+  type VARCHAR(250),
+  year INT,
+  city VARCHAR(250),
+  state VARCHAR(250),
+  region VARCHAR(250),
+  latitude DECIMAL,
+  longitude DECIMAL
+);
