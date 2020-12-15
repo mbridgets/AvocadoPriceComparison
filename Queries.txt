@@ -1,6 +1,8 @@
+DROP TABLE avocado_sales;
+
 CREATE TABLE avocado_sales(
   id INT PRIMARY KEY NOT NULL,
-  date TIMESTAMP,
+  date VARCHAR(500),
   average_price DECIMAL,
   total_volume DECIMAL,
   type_4046 DECIMAL,
@@ -10,11 +12,14 @@ CREATE TABLE avocado_sales(
   small_bags DECIMAL,
   large_bags DECIMAL,
   xlarge_bags DECIMAL,
-  type VARCHAR(250),
+  type VARCHAR(500),
   year INT,
   city VARCHAR(250),
   state VARCHAR(250),
   region VARCHAR(250),
+  city_state VARCHAR(250),
   latitude DECIMAL,
   longitude DECIMAL
 );
+
+SELECT * FROM avocado_sales
