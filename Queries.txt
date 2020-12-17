@@ -1,7 +1,6 @@
 DROP TABLE avocado_sales;
 
 CREATE TABLE avocado_sales(
-  id INT PRIMARY KEY NOT NULL,
   date VARCHAR(500),
   average_price DECIMAL,
   total_volume DECIMAL,
