@@ -1,0 +1,219 @@
+.content-block {
+    padding:20px;
+    margin:20px 0;
+    /* border: 1px solid #eee; */
+    border-radius:3px;
+    box-shadow: 0px 1px 4px #ccc;
+    background-color:#fff;
+}
+
+
+/* AVOCADO TOAST BUILDER */
+
+.board {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.card:active {
+    cursor: grabbing;
+}
+
+.card.dragging {
+    opacity: .5;
+    transform: scale(.8);
+}
+
+.column.drop {
+    border: 2px dashed #FFF;
+}
+
+.column.drop article {
+    pointer-events: none;
+}
+
+h3 {
+    font-size: 21px;
+    margin: 0;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.vs-col {
+    float:left;
+    padding-top:130px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+/* COLUMN 1 */
+/*-------------------------------------------------------*/
+.column-cities {
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #ccc;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    width:180px;
+    height:310px;
+}
+.column-cities .card {
+    background: #ecf0f1 url(../images/avocado-icon.png) 2px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 5px 10px 5px 30px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 150px;
+    height: 25px;
+    cursor: grab;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    
+}
+.column-cities h3 {
+    font-size:14px;
+    color:#212529;
+    padding:0;
+    margin:0;
+}
+.column-cities h4 {
+    visibility: hidden;
+}
+
+/* COLUMN 2 */
+/*-------------------------------------------------------*/
+.column-toast1 {
+    padding: 10px;
+    background: url(../images/toast.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    width:300px;
+    height:300px;
+    margin: 0 20px;
+    padding:0;
+    border:0;
+}
+.column-toast1 .card {
+    background: url(../images/avocado-toast.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:absolute;
+    padding: 0px;
+    margin: 0;
+    border-radius: 0;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    cursor: grab;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    text-align:center;
+    border:0;
+}
+.column.column-toast1 span {
+    display: inline-block;
+    margin-top:100px;
+  }
+.column-toast1 h3 {
+    font-size:16px;
+    color:#fff;
+    background-color:#000;
+    display:inline;
+    padding:2px 5px;
+    margin:0;
+    line-height:21px;
+}
+.column-toast1 h4 {
+    visibility: visible;
+    font-size:60px;
+    color:#fff;
+    font-weight:bold;
+    line-height:21px;
+    margin-top:30px;
+    padding:0;
+    text-shadow:
+    -3px -3px 0 #000,
+     0   -3px 0 #000,
+     3px -3px 0 #000,
+     3px  0   0 #000,
+     3px  3px 0 #000,
+     0    3px 0 #000,
+    -3px  3px 0 #000,
+    -3px  0   0 #000;
+}
+
+/* COLUMN 3 */
+/*-------------------------------------------------------*/
+.column-toast2 {
+    padding: 10px;
+    background: url(../images/toast.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    width:300px;
+    height:300px;
+    margin: 0 20px;
+    padding:0;
+    border:0;
+}
+.column-toast2 .card {
+    background: url(../images/avocado-toast.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:absolute;
+    padding: 0px;
+    margin-bottom: 0;
+    border-radius: 0;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    cursor: grab;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    text-align:center;
+    border:0;
+}
+.column.column-toast2 span {
+    display: inline-block;
+    margin-top:100px;
+  }
+.column-toast2 h3 {
+    font-size:16px;
+    color:#fff;
+    background-color:#000;
+    display:inline;
+    padding:2px 5px;
+    margin:0;
+    line-height:21px;
+}
+.column-toast2 h4 {
+    visibility: visible;
+    font-size:60px;
+    color:#fff;
+    font-weight:bold;
+    line-height:21px;
+    margin-top:30px;
+    padding:0;
+    text-shadow:
+    -3px -3px 0 #000,
+     0   -3px 0 #000,
+     3px -3px 0 #000,
+     3px  0   0 #000,
+     3px  3px 0 #000,
+     0    3px 0 #000,
+    -3px  3px 0 #000,
+    -3px  0   0 #000;
+}
+/*-------------------------------------------------------*/
+
+
+
+
+
+

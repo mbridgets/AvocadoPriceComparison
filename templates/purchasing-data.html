@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Avocado Project - Purchasing Data</title>
+    <!-- BOOTSWATCH THEME: SLATE -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+  </head>
+<body>
+  <a name="top"></a>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../static/images/avocado-icon.png" height="30" class="d-inline-block align-top" alt="Walmart logo" loading="lazy"> Avocado Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="purchasing-data.html">Purchasing Data
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="purchasing-power.html">Purchasing Power</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forecast.html">Forecast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="compare.html">Compare AvoToast</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+
+  <!-- OVERVIEW -->
+  <div class="row">
+    <div style="background-image: url(../static/images/avocados-pits.jpg);width:100%;background-image:center;background-size: cover;background-position: center;padding:60px;">
+        <div class="container">
+            <div style="background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));text-align:center;padding:40px;">
+                <h1 style="color:#fff;">Having Your Avocado Toast and Eating It Too</h1>
+            </div>
+        </div>
+        <br clear="both"/>
+    </div>
+  </div>
+
+  <div class="row" style="background-color:#ecf0f1;">
+    <div class="container" style="padding:30px 0;">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Avocado Purchasing Data</li>
+      </ol>
+     
+      <div class="content-block">
+        <h2>Avocado Purchasing Data</h2>
+        <hr/>
+        <p style="color:red;">(Write something about: Information about our data source and what we graphed below)</p>
+        <p>Data: <a href="https://hassavocadoboard.com/">Hass Avocado Board, 2015-2018</a></p>
+        <div class='tableauPlaceholder' id='viz1608415874727' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;Avo_Data_Final&#47;Dashboard1-ConventionalvsOrganic&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Avo_Data_Final&#47;Dashboard1-ConventionalvsOrganic' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;Avo_Data_Final&#47;Dashboard1-ConventionalvsOrganic&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1608415874727');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1427px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1427px';} else { vizElement.style.width='100%';vizElement.style.height='1627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>   
+    </div>
+     
+        <p style="text-align:center;"><button type="button" class="btn btn-success" onclick="window.location.href='purchasing-power.html'">Next: Purchasing Power</button></p>
+
+    </div>
+
+  </div>
+
+
+  
+<!-- FOOTER -->
+<footer class="page-footer" style="background-color:#ecf0f1;padding-top:300px;display:block;">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright TheMUGSSProject3. UC Davis Data Analytics Boot Camp.</div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- JAVASCRIPT LIBRARIES -->
+<script src="../static/drag-n-drop.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- JAVASCRIPT CHARTS -->
+
+</body>
+</html>
+

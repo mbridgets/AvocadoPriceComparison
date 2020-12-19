@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Avocado Project - Compare</title>
+    <!-- BOOTSWATCH THEME: SLATE -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+  </head>
+<body>
+  <a name="top"></a>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../static/images/avocado-icon.png" height="30" class="d-inline-block align-top" alt="Walmart logo" loading="lazy"> Avocado Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="purchasing-data.html">Purchasing Data</a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="purchasing-power.html">Purchasing Power</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forecast.html">Forecast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="compare.html">Compare AvoToast
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+
+  <!-- OVERVIEW -->
+  <div class="row">
+    <div style="background-image: url(../static/images/avocados-pits.jpg);width:100%;background-image:center;background-size: cover;background-position: center;padding:60px;">
+        <div class="container">
+            <div style="background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));text-align:center;padding:40px;">
+                <h1 style="color:#fff;">Having Your Avocado Toast and Eating It Too</h1>
+            </div>
+        </div>
+        <br clear="both"/>
+    </div>
+  </div>
+
+  <div class="row" style="background-color:#ecf0f1;">
+    <div class="container" style="padding:30px 0;">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Compare AvoToast</li>
+      </ol>
+      
+      <a name="compare"></a>
+      <div class="card text-white bg-secondary mb-3">
+            <div class="card-header" style="text-align:center;"><h4 class="card-title" style="font-size:32px;">How much will avocado toast cost me?</h4><p class="card-text" style="text-align:center;">Drag the city to the toasts to see how much it will cost.</p> </div>
+            <div class="card-body">
+               
+              <main class="board">
+                    <div class="column column-cities" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <article class="card" draggable="true" ondragstart="drag(event)" data-id="1">
+                            <span>
+                            <h3>Detroit</h3>
+                            <h4>$1.18</h4>
+                            </span>
+                        </article>
+                        <article class="card" draggable="true" ondragstart="drag(event)" data-id="2">
+                          <span>
+                          <h3>Grand Rapids</h3>
+                          <h4>$1.33</h4>
+                          </span>
+                      </article>
+                        <article class="card" draggable="true" ondragstart="drag(event)" data-id="3">
+                            <span>
+                            <h3>Harrisburg</h3>
+                            <h4>$1.37</h4>
+                            </span>
+                        </article>
+                        <article class="card" draggable="true" ondragstart="drag(event)" data-id="4">
+                            <span>
+                            <h3>Houston</h3>
+                            <h4>$1.04</h4>
+                            </span>
+                        </article>
+                        <article class="card" draggable="true" ondragstart="drag(event)" data-id="5">
+                          <span>
+                          <h3>New Orleans</h3>
+                          <h4>$1.20</h4>
+                          </span>
+                      </article>
+                      <article class="card" draggable="true" ondragstart="drag(event)" data-id="6">
+                          <span>
+                          <h3>Philadelphia</h3>
+                          <h4>$1.45</h4>
+                          </span>
+                      </article>
+                      <article class="card" draggable="true" ondragstart="drag(event)" data-id="7">
+                          <span>
+                          <h3>Richmond</h3>
+                          <h4>$1.24</h4>
+                          </span>
+                      </article>
+                      <article class="card" draggable="true" ondragstart="drag(event)" data-id="8">
+                          <span>
+                          <h3>Sacramento</h3>
+                          <h4>$1.47</h4>
+                          </span>
+                      </article>
+                    </div>
+                    <div class="column column-toast1" ondrop="drop(event)" ondragover="allowDrop(event)">  </div>
+                    <div class="vs-col">VS</div>
+                    <div class="column column-toast2" ondrop="drop(event)" ondragover="allowDrop(event)">  </div>
+                </main>
+              <p class="card-text" style="text-align:center;"><em>Average prices per city in 2018.</em></p>
+            </div>
+          </div>
+
+    </div>
+
+  </div>
+
+
+  
+<!-- FOOTER -->
+<footer class="page-footer" style="background-color:#ecf0f1;padding-top:300px;display:block;">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright TheMUGSSProject3. UC Davis Data Analytics Boot Camp.</div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- JAVASCRIPT LIBRARIES -->
+<script src="../static/drag-n-drop.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- JAVASCRIPT CHARTS -->
+
+</body>
+</html>
+
